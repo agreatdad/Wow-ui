@@ -10,7 +10,6 @@ import javax.inject.Inject;
 import net.runelite.api.Client;
 import net.runelite.api.GameState;
 import net.runelite.api.widgets.Widget;
-import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
 import net.runelite.client.ui.overlay.OverlayPosition;
@@ -73,9 +72,9 @@ public class ExpandedMenuOverlay extends Overlay
 
     private Widget findVisibleWidget(ExpandedMenuStone stone)
     {
-        for (WidgetInfo widgetInfo : stone.getWidgetInfos())
+        for (int componentId : stone.getComponentIds())
         {
-            Widget widget = client.getWidget(widgetInfo);
+            Widget widget = client.getWidget(componentId);
 
             if (isDrawable(widget))
             {

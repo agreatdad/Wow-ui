@@ -9,8 +9,8 @@ import java.awt.image.BufferedImage;
 import javax.inject.Inject;
 import net.runelite.api.Client;
 import net.runelite.api.SpriteID;
+import net.runelite.api.gameval.InterfaceID;
 import net.runelite.api.widgets.Widget;
-import net.runelite.api.widgets.WidgetInfo;
 import net.runelite.client.game.SpriteManager;
 import net.runelite.client.ui.overlay.Overlay;
 import net.runelite.client.ui.overlay.OverlayLayer;
@@ -40,11 +40,11 @@ public class LogoutRuneOverlay extends Overlay
     @Override
     public Dimension render(Graphics2D graphics)
     {
-        Widget friendsStone = client.getWidget(WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_FRIEND_ICON);
+        Widget friendsStone = client.getWidget(InterfaceID.ToplevelPreEoc.ICON9);
 
         if (friendsStone == null || friendsStone.isHidden())
         {
-            friendsStone = client.getWidget(WidgetInfo.RESIZABLE_VIEWPORT_FRIENDS_ICON);
+            friendsStone = client.getWidget(InterfaceID.ToplevelOsrsStretch.ICON9);
         }
 
         if (friendsStone == null || friendsStone.isHidden())
@@ -63,7 +63,7 @@ public class LogoutRuneOverlay extends Overlay
         int stoneHeight = 38;
 
         int targetX = friendBounds.x - stoneWidth + 2;
-        int targetY = friendBounds.y -2;
+        int targetY = friendBounds.y - 2;
 
         drawLogoutSprite(graphics, targetX, targetY, stoneWidth, stoneHeight);
         drawLogoutKeybind(graphics, targetX, targetY, stoneWidth, stoneHeight);

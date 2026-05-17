@@ -1,160 +1,160 @@
 package com.example;
 
 import java.util.function.Function;
-import net.runelite.api.widgets.WidgetInfo;
+import net.runelite.api.gameval.InterfaceID;
 
 public enum ExpandedMenuStone
 {
     COMBAT(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_COMBAT_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_COMBAT_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_COMBAT_ICON
+                            InterfaceID.Toplevel.STONE0,
+                            InterfaceID.ToplevelOsrsStretch.STONE0,
+                            InterfaceID.ToplevelPreEoc.ICON0
                     },
             ExampleConfig::combatLabel
     ),
 
     STATS(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_STATS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_STATS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_STATS_ICON
+                            InterfaceID.Toplevel.STONE1,
+                            InterfaceID.ToplevelOsrsStretch.STONE1,
+                            InterfaceID.ToplevelPreEoc.ICON1
                     },
             ExampleConfig::statsLabel
     ),
 
     QUESTS(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_QUESTS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_QUESTS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_QUESTS_ICON
+                            InterfaceID.Toplevel.STONE2,
+                            InterfaceID.ToplevelOsrsStretch.STONE2,
+                            InterfaceID.ToplevelPreEoc.ICON2
                     },
             ExampleConfig::questsLabel
     ),
 
     INVENTORY(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_INVENTORY_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_INVENTORY_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_INVENTORY_TAB
+                            InterfaceID.Toplevel.STONE3,
+                            InterfaceID.ToplevelOsrsStretch.STONE3,
+                            InterfaceID.ToplevelPreEoc.STONE3
                     },
             ExampleConfig::inventoryLabel
     ),
 
     EQUIPMENT(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_EQUIPMENT_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_EQUIPMENT_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_EQUIPMENT_ICON
+                            InterfaceID.Toplevel.STONE4,
+                            InterfaceID.ToplevelOsrsStretch.STONE4,
+                            InterfaceID.ToplevelPreEoc.ICON4
                     },
             ExampleConfig::equipmentLabel
     ),
 
     PRAYER(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_PRAYER_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_PRAYER_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_PRAYER_TAB
+                            InterfaceID.Toplevel.STONE5,
+                            InterfaceID.ToplevelOsrsStretch.STONE5,
+                            InterfaceID.ToplevelPreEoc.STONE5
                     },
             ExampleConfig::prayerLabel
     ),
 
     SPELLBOOK(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_MAGIC_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_MAGIC_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_MAGIC_ICON
+                            InterfaceID.Toplevel.STONE6,
+                            InterfaceID.ToplevelOsrsStretch.STONE6,
+                            InterfaceID.ToplevelPreEoc.ICON6
                     },
             ExampleConfig::spellbookLabel
     ),
 
     FRIENDS_CHAT(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_FRIENDS_CHAT_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_FRIENDS_CHAT_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_FRIEND_CHAT_ICON
+                            InterfaceID.Toplevel.STONE7,
+                            InterfaceID.ToplevelOsrsStretch.STONE7,
+                            InterfaceID.ToplevelPreEoc.ICON7
                     },
             ExampleConfig::friendsChatLabel
     ),
 
     FRIENDS(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_FRIENDS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_FRIENDS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_FRIEND_ICON
+                            InterfaceID.Toplevel.STONE9,
+                            InterfaceID.ToplevelOsrsStretch.STONE9,
+                            InterfaceID.ToplevelPreEoc.ICON9
                     },
             ExampleConfig::friendsLabel
     ),
 
     IGNORE(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_IGNORES_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_IGNORES_TAB
+                            InterfaceID.Toplevel.STONE8,
+                            InterfaceID.ToplevelOsrsStretch.STONE8
                     },
             ExampleConfig::ignoreLabel
     ),
 
     LOGOUT(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_LOGOUT_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_LOGOUT_TAB
+                            InterfaceID.Toplevel.STONE10,
+                            InterfaceID.ToplevelOsrsStretch.STONE10
                     },
             ExampleConfig::logoutLabel
     ),
 
     OPTIONS(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_OPTIONS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_OPTIONS_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_OPTIONS_ICON
+                            InterfaceID.Toplevel.STONE11,
+                            InterfaceID.ToplevelOsrsStretch.STONE11,
+                            InterfaceID.ToplevelPreEoc.ICON11
                     },
             ExampleConfig::settingsLabel
     ),
 
     EMOTES(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_EMOTES_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_EMOTES_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_EMOTES_ICON
+                            InterfaceID.Toplevel.STONE12,
+                            InterfaceID.ToplevelOsrsStretch.STONE12,
+                            InterfaceID.ToplevelPreEoc.ICON12
                     },
             ExampleConfig::emotesLabel
     ),
 
     MUSIC(
-            new WidgetInfo[]
+            new int[]
                     {
-                            WidgetInfo.FIXED_VIEWPORT_MUSIC_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_MUSIC_TAB,
-                            WidgetInfo.RESIZABLE_VIEWPORT_BOTTOM_LINE_MUSIC_ICON
+                            InterfaceID.Toplevel.STONE13,
+                            InterfaceID.ToplevelOsrsStretch.STONE13,
+                            InterfaceID.ToplevelPreEoc.ICON13
                     },
             ExampleConfig::musicLabel
     );
 
-    private final WidgetInfo[] widgetInfos;
+    private final int[] componentIds;
     private final Function<ExampleConfig, String> labelGetter;
 
-    ExpandedMenuStone(WidgetInfo[] widgetInfos, Function<ExampleConfig, String> labelGetter)
+    ExpandedMenuStone(int[] componentIds, Function<ExampleConfig, String> labelGetter)
     {
-        this.widgetInfos = widgetInfos;
+        this.componentIds = componentIds;
         this.labelGetter = labelGetter;
     }
 
-    public WidgetInfo[] getWidgetInfos()
+    public int[] getComponentIds()
     {
-        return widgetInfos;
+        return componentIds;
     }
 
     public String getLabel(ExampleConfig config)
