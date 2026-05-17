@@ -26,7 +26,7 @@ import net.runelite.api.events.StatChanged;
 @PluginDescriptor(
 		name = "Wow Hud"
 )
-public class ExamplePlugin extends Plugin
+public class WowHudPlugin extends Plugin
 {
 	@Inject
 	private XpProgressOverlay xpProgressOverlay;
